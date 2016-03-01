@@ -3,5 +3,5 @@ Repositorio individual de prácticas de laboratorio de Ingenieria de Software (C
 ## Autor:
 
 #### Carlos Gerardo Acosta Hernández
-     	    carlos-acosta@ciencias.unam.mx
-	    	    311154243
+     carlos-acosta@ciencias.unam.mx
+     311154243
