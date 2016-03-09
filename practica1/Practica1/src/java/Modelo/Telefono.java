@@ -13,6 +13,11 @@ public class Telefono {
     private int id;
     private String numero;
 
+    public Telefono(int id, String numero) {
+	this.id = id;
+	this.numero = numero;
+    }
+
     public int getId() {
         return id;
     }

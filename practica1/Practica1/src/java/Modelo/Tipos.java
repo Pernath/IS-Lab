@@ -13,6 +13,11 @@ public class Tipos {
     private int id;
     private String tiposangre;
 
+    public Tipos (int id, String tiposangre) {
+	this.id = id;
+	this.tiposangre = tiposangre;
+	
+    }
     public int getId() {
         return id;
     }

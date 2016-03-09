@@ -20,6 +20,18 @@ public class Usuario {
     private int id_telefono;
     private int id_tiposangre;
 
+    public Usuario(int id, String nombre, String app, String apm, String correo, String fecha_nac, String contrasenia, int id_telefono, int id_tiposangre) {
+        this.id = id;
+        this.nombre = nombre;
+        this.app = app;
+        this.apm = apm;
+        this.correo = correo;
+        this.fecha_nac = fecha_nac;
+        this.contrasenia = contrasenia;
+        this.id_telefono = id_telefono;
+        this.id_tiposangre = id_tiposangre;
+    }
+
     public int getId() {
         return id;
     }
