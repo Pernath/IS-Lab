@@ -3,9 +3,8 @@
 <hibernate-mapping>
   <class name="Modelo.Telefono" table="telefono">
       <id name="id" type="java.lang.Integer" column="id">
-      <generator class "identity"/>
+      <generator class="identity"/>
       </id>
-      
       <property name="numero" type="string" column="numero"/>
       </class>
 </hibernate-mapping>

@@ -3,7 +3,7 @@
 <hibernate-mapping>
   <class name="Modelo.Usuario" table="usuario">
   <id name="id" type="java.lang.Integer" column="id">
-      <generator class "identity"/>
+      <generator class="identity"/>
   </id>
   <property name="nombre" type="string" column="nombre"/>
   <property name="app" type="string" column="app"/>
