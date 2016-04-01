@@ -1,0 +1,30 @@
+%Especificacion
+\documentclass[12pt]{article}
+
+%Paquetes
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm,letterpaper]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+%Preambulo
+\title{Ingeniería de Software \\ Laboratorio: Práctica 1}
+\author{Carlos Gerardo Acosta Hernández}
+\date{Entrega: 08/03/16 \\ Facultad de Ciencias UNAM}
+
+\begin{document}
+\maketitle
+\section{Cuestionario}
+\begin{enumerate}
+\item \textbf{¿Cuánto tiempo te llevó resolver la práctica} \par
+  Alrededor de dos horas en la implementación, pero la investigación previa para poder realizar efectivamente el mapeo lo hice ocasionalmente estas dos semanas que pasaron antes de la entrega.
+\item \textbf{¿Cómo se llaman los archivos de configuraciones de Hibernate, tuviste alguna dificultad con la configuración de estos? } \par
+  El archivo de configuración general de $Hibernate$: \textit{hibernate.cfg.xml} fue autogenerado. Ubicado en \textit{src/java}.\par
+  Para la tabla $Usuario$, el archivo correspondiente es ``MapeoUsuario.hbm.xml'', para la tabla $Telefono$, el archivo es ``MapeoTelefono.hbm.xml'' y el mapeo para la tabla $Tipos$ está en ``MapeoTipos.hbm.xml''. Todos estos ubicados en \textit{src/java/Modelo}. \par
+  En realidad, con el \textit{Hibernate Mapping Wizard}, me sentí bastante guíado, sólo hay un par de cosas que no me quedan claras si se deben reflejar directamente en el xml de mapeo de clase, como las restricciones.  \\
+\end{enumerate}
+\end{document}
