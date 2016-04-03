@@ -76,4 +76,5 @@ public class UsuarioBean {
         return res;
     }
     
+    
 }

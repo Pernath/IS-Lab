@@ -39,7 +39,7 @@ public class LoginBean {
     }
     
     public String motin(){
-        return "";
+        return "otra";
     }
     
     
