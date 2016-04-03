@@ -5,11 +5,20 @@
  */
 package Modelo;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author carlos
  */
-public class Usuario {
+
+@Entity
+@Table(name = "usuario")
+public class Usuario implements Serializable {
+    @Id
     private int id;
     private String nombre;
     private String app;
@@ -20,7 +29,15 @@ public class Usuario {
     private int id_telefono;
     private int id_tiposangre;
 
+    /**Por omision */
     public Usuario() {
+    }
+    
+    /** Login*/
+    public Usuario(int id, String nombre, String contrasenia) {
+        this.id = id;
+        this.nombre = nombre;
+        this.contrasenia = contrasenia;
     }
 
     

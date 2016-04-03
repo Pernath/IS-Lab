@@ -2,15 +2,17 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
   <class name="Modelo.Usuario" table="usuario">
-  <id name="id" type="java.lang.Integer" column="id">
-      <generator class="identity"/>
+  <id name="id" type="int"> 
+    <column name="id"/>
+    <generator class="assigned"/>
   </id>
   <property name="nombre" type="string" column="nombre"/>
   <property name="app" type="string" column="app"/>
   <property name="apm" type="string" column="apm"/>
   <property name="correo" type="string" column="correo"/>
-  <property name="fecha_nac" type="string" column="fecha_nac"/>    
-  <property name="id_telefono" type="string" column="id_telefono"/>
-  <property name="id_tiposangre" type="string" column="id_tiposangre"/>
+  <property name="fecha_nac" type="string" column="fecha_nac"/> 
+  <property name="contrasenia" type="string" column="contrasenia"/>    
+  <property name="id_telefono" type="int" column="id_telefono"/>
+  <property name="id_tiposangre" type="int" column="id_tiposangre"/>
    </class>
 </hibernate-mapping>

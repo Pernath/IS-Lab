@@ -24,16 +24,17 @@ public class UserLogin {
         sesion = HibernateUtil.getSessionFactory().getCurrentSession();
     }
     
-    public Usuario getSesionUsuario(String nombre, String contrasenia) {
+    public Usuario getSesionUsuario(String nombre, String contrasena) {
         Usuario us;
         try {
             Transaction t = sesion.beginTransaction();
-            String qs = "FROM Usuario WHERE nombre = "+nombre+ "AND contrasenia = "+contrasenia;
+            String qs = "FROM Usuario WHERE nombre = '"+nombre+ "' AND contrasenia = '"+contrasena+"'";
             Query q = sesion.createQuery(qs);
             return (Usuario) q.uniqueResult();
         } catch (Exception e) {
             e.printStackTrace();
+            throw e;
         }
-        return null;
+        //return null;
     }
 }

@@ -8,10 +8,14 @@ and open the template in the editor.
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <head>
-        <title>Error</title>
+        <title>Exito</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div>Usuario no encontrado</div>
+        <h:form>
+            <h1>Inicio de Sesión exitoso</h1>
+            <h:commandButton value="Datos" action="#{loginBean.motin()}"/>
+            <h:commandButton value="Cerrar Sesión" action="#{loginBean.cerrarSesion()}"/>
+        </h:form>
     </body>
 </html>
